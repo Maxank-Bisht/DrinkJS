@@ -43,10 +43,10 @@
                     <div id="myCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
                          <div class="position-absolute top-0 start-50 translate-middle-x pt-5">
                               <div class="row">
-                                   <div class="col-md-4 ">
-                                        <input id="search" class="form-control me-3 h-100" type="text"  aria-label="Search"  placeholder="&#xF002; Search your drink here" style="font-family:Arial, FontAwesome" />
+                                   <div class="col-md-4 col-10 mx-auto mb-1 ">
+                                        <input id="search" class="form-control me-3 py-2" type="text"  aria-label="Search"  placeholder="&#xF002; Search your drink here" style="font-family:Arial, FontAwesome" />
                                    </div>
-                                   <div class="col-md-3 d-flex justify-content-center">
+                                   <div class="col-md-3 col-10 mx-auto mb-1 d-flex justify-content-center">
                                         <label for="search-type" class="form-label me-2 h-100 text-light"><h4>Type:</h4></label>
                                         <select id="search-type" class="form-select mt-0" aria-label="Default select example">
                                              <option selected value="All">All</option>
@@ -55,7 +55,7 @@
                                              
                                         </select>
                                    </div>
-                                   <div class="col-md-3 d-flex justify-content-center">
+                                   <div class="col-md-3 col-10 mx-auto mb-1 d-flex justify-content-center">
                                         <label for="search-catgy" class="form-label me-2 h-100 text-light"><h4>Catergory:</h4></label>
                                         <select id="search-catgy" class="form-select mt-0" aria-label="Default select example">
                                              <option selected value="All">All</option>
@@ -72,8 +72,8 @@
                                              <option value="Other/Unknown">Other/Unknown</option>
                                         </select>
                                    </div>
-                                   <div class="col-md-2 ">
-                                        <button id="submit" class="btn  btn-outline-light h-100" type="submit">Search</button>
+                                   <div class="col-lg-2 col-10 mx-auto ">
+                                        <button id="submit" class="btn w-100 btn-outline-light " type="submit">Search</button>
                                    </div>
                               </div>
                               
@@ -129,10 +129,10 @@
 
                </main>
           </div>
-
-          <div id="loading" class=" justify-content-center mt-5" style="display: none"><img src="public/img/loading.gif" class=""></div>
           <div id="result" class="row mx-auto text-center mt-5"></div>
-          <div id="output" class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 g-4 text-center mt-3 mx-3"></div>
+          <div id="loading" class=" justify-content-center mt-5" style="display: none"><img src="public/img/loading.gif" class=""></div>
+          
+          <div id="output" class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-4 text-center mt-3 mx-3"></div>
           
         
           <hr>

@@ -39,7 +39,7 @@ class UI{
           console.log(mapIngtToMesurse);
 
           this.output.innerHTML += `
-               <div class="col">
+               <div class="col mb-3">
                     <div class="card h-100" id="drink-card">
                          <img src="${strDrinkThumb}" class="card-img-top" >
                          <div class="card-body">
