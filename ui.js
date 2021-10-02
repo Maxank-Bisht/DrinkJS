@@ -48,26 +48,33 @@ class UI {
       for (let i = 0; i < drinks.length; i += 2) {
         let drinkData1 = this.getDrinkData(drinks[i]);
         let drinkData2 = this.getDrinkData(drinks[i + 1]);
-        this.output.innerHTML += `<div class="row">
-                                   <div class="col-sm-6">
-                                   <div class="card">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Special title treatment</h5>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                   </div>
-                                   </div>
-                                   <div class="col-sm-6">
-                                   <div class="card">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Special title treatment</h5>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                   </div>
-                                   </div>
-                                   </div>`;
+        this.output.innerHTML += `
+          <div class="row" >
+               <div class="col-sm-6">
+               <div class="card">
+               <img class="card-img-top" src="${drinkData1.strDrinkThumb}" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">${drinkData1.strDrink}</h5>
+                    <h6 class="card-text">${drinkData1.strAlcoholic}</h6>
+                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#drink${i}">
+                    More Details
+                    </button>
+                    </div>
+               </div>
+               </div>
+               <div class="col-sm-6">
+               <div class="card">
+               <img class="card-img-top" src="${drinkData2.strDrinkThumb}" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">${drinkData2.strDrink}</h5>
+                    <h6 class="card-text">${drinkData2.strAlcoholic}</h6>
+                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#drink">
+                    More Details
+                    </button>
+                    </div>
+               </div>
+               </div>
+               </div>`;
       }
     } else {
       for (let i = 0; i < drinks.length; i += 2) {
@@ -80,8 +87,8 @@ class UI {
                <img class="card-img-top" src="${drinkData1.strDrinkThumb}" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title">${drinkData1.strDrink}</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">${drinkData1.strAlcoholic}</p>
+                    <a href="#" class="btn btn-sm btn-info">More Details</a>
                </div>
                </div>
           </div>`;
@@ -89,14 +96,16 @@ class UI {
           let drinkData1 = this.getDrinkData(drinks[i]);
           let drinkData2 = this.getDrinkData(drinks[i + 1]);
           this.output.innerHTML += `
-          <div class="row">
+          <div class="row" >
                <div class="col-sm-6">
                <div class="card">
                <img class="card-img-top" src="${drinkData1.strDrinkThumb}" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title">${drinkData1.strDrink}</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h6 class="card-text">${drinkData1.strAlcoholic}</h6>
+                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#drink${i}">
+                    More Details
+                    </button>
                     </div>
                </div>
                </div>
@@ -105,8 +114,10 @@ class UI {
                <img class="card-img-top" src="${drinkData2.strDrinkThumb}" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title">${drinkData2.strDrink}</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h6 class="card-text">${drinkData2.strAlcoholic}</h6>
+                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#drink">
+                    More Details
+                    </button>
                     </div>
                </div>
                </div>
