@@ -9,7 +9,16 @@ class Drinks {
     document.getElementById("loading").style.display = "none";
 
     const responseData = await response.json();
-    console.log(responseData);
+    // console.log(responseData);
+    return responseData;
+  }
+
+  async getTopDrink() {
+    const response = await fetch(
+      `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita`
+    );
+    const responseData = await response.json();
+    // console.log(responseData);
     return responseData;
   }
 }
